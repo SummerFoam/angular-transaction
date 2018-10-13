@@ -1,0 +1,8 @@
+<div *ngIf="transaction" style="text-align:center;">
+
+    <h2>{{transaction.description}}</h2>
+    <div style="margin-top:50px;"><h5>You have a fund transfer request pending approval</h5></div>
+    
+   <button (click)="decline()" class="btn btn-warning">Decline</button>
+   <button (click)="approve()" class="btn btn-primary">Approve</button>
+</div>

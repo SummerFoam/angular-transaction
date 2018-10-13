@@ -1,0 +1,9 @@
+
+<div style="width:50%;margin: auto;">
+<ul class="list-group">
+    <li *ngFor="let transaction of transactions" class="list-group-item">
+       <a routerLink="/detail/{{transaction.id}}"><span>{{transaction.description}}</span></a>
+      </li>
+  </ul>
+
+</div>
